@@ -2,11 +2,13 @@ const NumberCategoriesRef = document.querySelectorAll('.item');
 console.log(`Number of categories: ${NumberCategoriesRef.length}`);
 
 NumberCategoriesRef.forEach(el => {
-  console.log(el.firstElementChild.textContent);
-  console.log(el.lastElementChild.children.length);
+  console.log(`Categories: ${el.firstElementChild.textContent}`);
+  console.log(`Elements: ${el.lastElementChild.children.length}`);
+  el.firstElementChild.textContent = `${
+    el.firstElementChild.textContent +
+    ' ' +
+    '-' +
+    ' ' +
+    el.lastElementChild.children.length
+  }`;
 });
-
-// const CategoriesRef = document.querySelectorAll('h2');
-// CategoriesRef.forEach(element => {
-//   console.log(`Category: ${element.textContent}`);
-// });
