@@ -51,6 +51,8 @@ input {
   margin: 0 auto;
 }
 
+/***************************** TASK-1 ***********/
+
 #categories {
   display: flex;
   flex-direction: column;
@@ -98,6 +100,8 @@ input {
   margin-bottom: 8px;
 }
 
+/***************************** TASK-2 ***********/
+
 #name-input {
   margin-bottom: 16px;
   width: 360px;
@@ -131,4 +135,63 @@ input {
 
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+
+/***************************** TASK-4 ***********/
+
+.login-form {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 408px;
+
+  border-radius: 8px;
+
+  background-color: #fff;
+}
+
+.login-form input {
+  display: block;
+
+  width: 100%;
+  padding: 8px 16px 8px 16px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  height: 40px;
+}
+
+.login-form label span {
+  display: block;
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#email {
+  margin-bottom: 8px;
+}
+#password {
+  margin-bottom: 16px;
+}
+
+.form-btn {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+
+  width: 86px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  cursor: pointer;
+
+  background: #4e75ff;
 }
