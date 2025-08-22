@@ -27,18 +27,28 @@ const images = [
 
 const galleryRef = document.querySelector('.gallery');
 
+galleryRef.style.display = 'flex';
+galleryRef.style.flexWrap = 'wrap';
+galleryRef.style.rowGap = '48px';
+galleryRef.style.columnGap = '24px';
+galleryRef.style.justifyContent = 'center';
+
 const galleryImages = images => {
+  const fragment = document.createDocumentFragment();
+
   images.forEach(img => {
     const imgEl = document.createElement('img');
     imgEl.src = img.url;
     imgEl.alt = img.alt;
     imgEl.width = 360;
+    imgEl.height = 300;
 
     const itemImg = document.createElement('li');
-    itemImg.prepend(imgEl);
+    itemImg.append(imgEl);
 
-    galleryRef.append(itemImg);
+    fragment.append(itemImg);
   });
+  galleryRef.append(fragment);
 };
 
-console.log(galleryImages(images));
+galleryImages(images);
