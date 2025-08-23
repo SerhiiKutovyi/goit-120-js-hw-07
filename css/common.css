@@ -35,7 +35,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0px;
 }
 
@@ -45,10 +46,24 @@ input {
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.container {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
+.btn {
+  padding: 8px 16px 8px 16px;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+
+  color: #fff;
+  background: #4e75ff;
+}
+
+.go-back {
+  margin-bottom: 10px;
 }
 
 /***************************** TASK-1 ***********/
@@ -100,7 +115,7 @@ input {
   margin-bottom: 8px;
 }
 
-/***************************** TASK-2 ***********/
+/***************************** TASK-3 ***********/
 
 #name-input {
   margin-bottom: 16px;
@@ -179,19 +194,43 @@ input {
 }
 
 .form-btn {
-  padding: 8px 16px 8px 16px;
-  border-radius: 8px;
-  border: none;
-
   width: 86px;
+}
 
-  font-weight: 500;
+/***************************** TASK-5 ***********/
+.widget {
+  width: 345px;
+  height: 280px;
+
+  margin: 0 auto;
+  padding: 100px 88px 100px 88px;
+
+  border-radius: 8px;
+
+  background-color: #fff;
+}
+
+.color-text {
+  margin-bottom: 16px;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
-  color: #fff;
 
-  cursor: pointer;
+  color: #2e2f42;
+}
 
-  background: #4e75ff;
+.color {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+
+  color: #2e2f42;
+}
+
+.change-color {
+  display: block;
+  margin: 0 auto;
 }
