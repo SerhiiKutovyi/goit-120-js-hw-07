@@ -1,5 +1,21 @@
-const emailRef = document.querySelector('#email');
-console.log(emailRef);
+const formRef = document.querySelector('.login-form');
+console.log(formRef);
 
-const passwordRef = document.querySelector('#password');
-console.log(emailRef);
+formRef.addEventListener('submit', e => {
+  e.preventDefault();
+  const email = e.target.elements.email.value.trim();
+  const password = e.target.elements.password.value.trim();
+
+  if (email === '' || password === '') {
+    alert('All form fields must be filled in');
+    return;
+  }
+
+  const dataUser = {
+    email,
+    password,
+  };
+  console.log(dataUser);
+
+  e.target.reset();
+});
