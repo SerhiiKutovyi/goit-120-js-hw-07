@@ -4,8 +4,6 @@ const buttonChangeColorRef = document.querySelector('.change-color');
 
 const colorRef = document.querySelector('.color');
 
-// bodyRef.style.backgroundColor = 'red';
-
 buttonChangeColorRef.addEventListener('click', e => {
   bodyRef.style.backgroundColor = getRandomHexColor();
   colorRef.innerHTML = bodyRef.style.backgroundColor;
